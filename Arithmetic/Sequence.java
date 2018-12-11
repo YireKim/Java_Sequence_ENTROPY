@@ -9,11 +9,15 @@ public class Sequence {
 		
 		int a = 2;
 		int sum = 0;
-		int sum2 = 6;
 		String res = "";
 
 		for(int i = 0; i < 5; i++) {
-			sum += 6;
+			sum += a + 6*i;
+			if(i < 4) {
+				res += a + 6*i+" + ";
+			}else {
+				res += a + 6*i+" = ";
+			}
 		}
 		System.out.println(res+" "+sum);
 	}

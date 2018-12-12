@@ -1,6 +1,8 @@
 package Arithmetic;
 /**
 Count is 2, Number is 8, Sum is 10
+		 N           AN          S
+
 Count is 3, Number is 14, Sum is 24
 Count is 4, Number is 20, Sum is 44
 Count is 5, Number is 26, Sum is 70
@@ -15,20 +17,24 @@ Count is 199, Number is 1190, Sum is 118604
 Count is 200, Number is 1196, Sum is 119800
 S is 119800
  * */
-public class Sequence200 {
+public class Sequence119800 {
 	public static void main(String[] args) {
-		int A = 2;
-        int D = 6;
-        int S = A;
-        int N = 2;
-        int AN = 0;
+		int A = 2; // init
+		int D = 6; // difference
+        int S = A; // series
+        int N = 2; // count
+        int AN = 0; // term
         while(true){
+        	AN = A + (N-1)*D;
+        	S += AN;
+        	N++;
         	
-            
-            // 이 곳을 채우시오
-            
+        	System.out.printf("Count is %d, Number is %d, Sum is %d \n",(N-1),AN,S);
+        	
+        	if(N == 201) {
+        		break;
+        	}
         }
-        //System.out.println("S is "+ S);
-		
+        System.out.printf("S is %d", S);
 	}
 }

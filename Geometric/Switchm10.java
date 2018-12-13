@@ -17,6 +17,7 @@ public class Switchm10 {
 			//			}else {
 			//				count += i;
 			//			}
+			
 		}
 		System.out.println(count);
 	}

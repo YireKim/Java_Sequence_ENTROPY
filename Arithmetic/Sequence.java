@@ -11,15 +11,23 @@ public class Sequence {
 		int sum = 0;
 		String res = "";
 
-		for(int i = 0; i < 5; i++) {
-			sum += a + 6*i;
-			if(i < 4) {
-				res += a + 6*i+" + ";
-			}else {
-				res += a + 6*i+" = ";
-			}
+		for (int i = 0; i < 5; i++) {
+			sum += a + 6 * i;
+
+			res += (i < 4) ? a + 6 * i + " + " : a + 6 * i + " = ";
 		}
-		System.out.println(res+" "+sum);
+		System.out.println(res + " " + sum);
 	}
 }
+
+
+
+
+
 //2 8 14 20 26 = 70
+
+//if(i < 4) {
+//res += a + 6*i+" + ";
+//}else {
+//res += a + 6*i+" = ";
+//}
